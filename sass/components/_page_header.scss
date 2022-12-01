@@ -1,0 +1,112 @@
+.top-line {
+    background-color: var(--bgd-color);
+    border-bottom: 1px solid #ececec;
+}
+
+.top-line-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--logo-color);
+}
+
+.logo-stile {
+    color: var(--akcent-color);
+}
+
+.navigation {
+    margin-left: 93px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-link {
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1, 14;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+
+    &:hover,
+    &:focus {
+        color: var(--akcent-color);
+    }
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--akcent-color);
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        opacity: 0;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover::after,
+    &:focus::after {
+        opacity: 1;
+    }
+}
+
+.contact-menu {
+    display: flex;
+    margin-left: auto;
+    column-gap: 50px;
+}
+
+.contacts-title {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    display: flex;
+    align-items: center;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--descr-color);
+
+&:hover,
+&:focus {
+    color: var(--akcent-color);
+}
+}
+
+.icon-contacts {
+    fill: var(--descr-color);
+    margin-right: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.contacts-title:hover &,
+.contacts-title:focus & {
+    fill: var(--akcent-color);
+}
+
+}
