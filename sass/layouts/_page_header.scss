@@ -3,7 +3,7 @@
     border-bottom: 1px solid #ececec;
 }
 
-.page-header-conteine {
+.page-header__conteiner {
     display: flex;
     align-items: center;
 }
@@ -20,15 +20,13 @@
     color: var(--logo-color);
 }
 
-.header__logo__akcent_theme {
-    color: var(--akcent-color);
-}
+
 
 .header-navigation {
     margin-left: 93px;
 }
 
-.header-navigation--menu {
+.header-navigation__list {
     display: flex;
     gap: 50px;
 }
@@ -72,7 +70,7 @@
     }
 }
 
-.header-contact-menu {
+.header-contact__list {
     display: flex;
     margin-left: auto;
     column-gap: 50px;

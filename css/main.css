@@ -72,12 +72,16 @@ body {
   padding-bottom: 94px;
 }
 
+.web--akcent_theme {
+  color: var(--akcent-color);
+}
+
 .botom__line__header {
   background-color: var(--bgd-color);
   border-bottom: 1px solid #ececec;
 }
 
-.page-header-conteine {
+.page-header__conteiner {
   display: flex;
   align-items: center;
 }
@@ -94,15 +98,11 @@ body {
   color: var(--logo-color);
 }
 
-.header__logo__akcent_theme {
-  color: var(--akcent-color);
-}
-
 .header-navigation {
   margin-left: 93px;
 }
 
-.header-navigation--menu {
+.header-navigation__list {
   display: flex;
   gap: 50px;
 }
@@ -139,7 +139,7 @@ body {
   opacity: 1;
 }
 
-.header-contact-menu {
+.header-contact__list {
   display: flex;
   margin-left: auto;
   column-gap: 50px;
@@ -212,7 +212,7 @@ body {
   color: var(--bgd-color);
 }
 
-.hero_button {
+.section__hero__button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 10px 32px;
   text-align: center;
@@ -227,7 +227,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
-.hero_button:hover, .hero_button:focus {
+.section__hero__button:hover, .section__hero__button:focus {
   background-color: var(--button-active-color);
 }
 
